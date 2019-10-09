@@ -11,7 +11,7 @@ class App extends Component {
 		};
 	}
 
-	changeName = (newSelection) => {
+	onChange = (newSelection) => {
 		this.setState({
 			selected: newSelection
 		});
@@ -22,7 +22,7 @@ class App extends Component {
 			<div className="App">
 				<header className="App-header">UNIT 4 FINAL ASSESSMENT</header>
 				<main>
-					<CircleSelector selected={this.state.selected} onChange={this.changeName} />
+					<CircleSelector selected={this.state.selected} onChange={this.onChange} />
 					<Circles selected={this.state.selected} />
 				</main>
 			</div>
